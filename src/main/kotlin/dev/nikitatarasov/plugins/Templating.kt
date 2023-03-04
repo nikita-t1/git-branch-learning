@@ -14,6 +14,8 @@ fun Application.configureTemplating() {
                 body {
                     h1 { +"Nice... <script>alert('hi')</script>" }
                     h1 { +"Nice2... <script>alert('hi')</script>" }
+                    h1 { +"Nice3... <script>alert('hi')</script>" }
+                    h1 { +"Nice4... <script>alert('hi')</script>" }
                     h1 { +"HTML" }
                     ul {
                         for (n in 1..10) {
