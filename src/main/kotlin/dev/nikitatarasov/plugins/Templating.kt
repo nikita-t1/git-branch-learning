@@ -21,5 +21,13 @@ fun Application.configureTemplating() {
                 }
             }
         }
+        get("/html-dsl/hi") {
+            call.respondHtml {
+
+                body {
+                    h1 { +"Hello" }
+                }
+            }
+        }
     }
 }
