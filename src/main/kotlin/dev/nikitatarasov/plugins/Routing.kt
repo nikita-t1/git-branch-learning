@@ -19,6 +19,8 @@ fun Application.configureRouting() {
         get("/1") {
             call.respondText("Hello Git!")
         }
-
+        get("/2") {
+            call.respondText("Hello Git!")
+        }
     }
 }
