@@ -21,33 +21,5 @@ fun Application.configureTemplating() {
                 }
             }
         }
-        get("/html-dsl/hi") {
-            call.respondHtml {
-
-                body {
-                    h1 { +"Hello" }
-                }
-            }
-        }
-        get("/html-dsl/kenobi") {
-            call.respondHtml {
-
-                body {
-                    h1 { +"Hello there, General Kenobi" }
-                }
-            }
-        }
-        get("/html-dsl/_") {
-            call.respondHtml {
-
-                body {
-                    h1 {
-                        for (n in 1..100) {
-                            +"_"
-                        }
-                    }
-                }
-            }
-        }
     }
 }
