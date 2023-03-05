@@ -29,5 +29,13 @@ fun Application.configureTemplating() {
                 }
             }
         }
+        get("/html-dsl/kenobi") {
+            call.respondHtml {
+
+                body {
+                    h1 { +"Hello there, General Kenobi" }
+                }
+            }
+        }
     }
 }
