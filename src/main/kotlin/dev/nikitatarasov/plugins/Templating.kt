@@ -37,5 +37,17 @@ fun Application.configureTemplating() {
                 }
             }
         }
+        get("/html-dsl/_") {
+            call.respondHtml {
+
+                body {
+                    h1 {
+                        for (n in 1..100) {
+                            +"_"
+                        }
+                    }
+                }
+            }
+        }
     }
 }
