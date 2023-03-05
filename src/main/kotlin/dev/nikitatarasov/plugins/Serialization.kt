@@ -14,5 +14,13 @@ fun Application.configureSerialization() {
         get("/json/kotlinx-serialization") {
             call.respond(mapOf("hello" to "world"))
         }
+
+        get("/json/foobar") {
+            call.respond(mapOf("foo" to "bar"))
+        }
+
+        get("/json/carpet") {
+            call.respond(mapOf("car" to "pet"))
+        }
     }
 }
