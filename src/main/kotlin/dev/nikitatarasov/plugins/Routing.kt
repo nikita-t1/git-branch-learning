@@ -16,5 +16,8 @@ fun Application.configureRouting() {
         get("/") {
             call.respondText("Hello Git!")
         }
+        get("/_") {
+            call.respondText("Hi")
+        }
     }
 }
