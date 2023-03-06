@@ -19,8 +19,5 @@ fun Application.configureSerialization() {
             call.respond(mapOf("foo" to "bar"))
         }
 
-        get("/json/carpet") {
-            call.respond(mapOf("car" to "pet"))
-        }
     }
 }
